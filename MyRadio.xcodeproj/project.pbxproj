@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8D6E54C4192929A0001A7329 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D6E54C1192929A0001A7329 /* AudioToolbox.framework */; };
+		8D6E54C6192929A0001A7329 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D6E54C3192929A0001A7329 /* AVFoundation.framework */; };
 		8DDE9F7C1926888C00609290 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8DDE9F7B1926888C00609290 /* Foundation.framework */; };
 		8DDE9F7E1926888C00609290 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8DDE9F7D1926888C00609290 /* CoreGraphics.framework */; };
 		8DDE9F801926888C00609290 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8DDE9F7F1926888C00609290 /* UIKit.framework */; };
@@ -22,6 +24,7 @@
 		8DDE9FA01926888D00609290 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8DDE9F7F1926888C00609290 /* UIKit.framework */; };
 		8DDE9FA81926888D00609290 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8DDE9FA61926888D00609290 /* InfoPlist.strings */; };
 		8DDE9FAA1926888D00609290 /* MyRadioTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DDE9FA91926888D00609290 /* MyRadioTests.m */; };
+		8DDE9FB91926AC1500609290 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DDE9FB81926AC1500609290 /* DetailViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +38,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8D6E54C1192929A0001A7329 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		8D6E54C3192929A0001A7329 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		8DDE9F781926888C00609290 /* MyRadio.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyRadio.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8DDE9F7B1926888C00609290 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		8DDE9F7D1926888C00609290 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -55,6 +60,8 @@
 		8DDE9FA51926888D00609290 /* MyRadioTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MyRadioTests-Info.plist"; sourceTree = "<group>"; };
 		8DDE9FA71926888D00609290 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		8DDE9FA91926888D00609290 /* MyRadioTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyRadioTests.m; sourceTree = "<group>"; };
+		8DDE9FB71926AC1500609290 /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
+		8DDE9FB81926AC1500609290 /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +69,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8D6E54C4192929A0001A7329 /* AudioToolbox.framework in Frameworks */,
+				8D6E54C6192929A0001A7329 /* AVFoundation.framework in Frameworks */,
 				8DDE9F7E1926888C00609290 /* CoreGraphics.framework in Frameworks */,
 				8DDE9F801926888C00609290 /* UIKit.framework in Frameworks */,
 				8DDE9F7C1926888C00609290 /* Foundation.framework in Frameworks */,
@@ -81,9 +90,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8D6E543519291DCF001A7329 /* Library */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Library;
+			sourceTree = "<group>";
+		};
 		8DDE9F6F1926888C00609290 = {
 			isa = PBXGroup;
 			children = (
+				8D6E543519291DCF001A7329 /* Library */,
 				8DDE9F811926888C00609290 /* MyRadio */,
 				8DDE9FA31926888D00609290 /* MyRadioTests */,
 				8DDE9F7A1926888C00609290 /* Frameworks */,
@@ -103,6 +120,8 @@
 		8DDE9F7A1926888C00609290 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				8D6E54C1192929A0001A7329 /* AudioToolbox.framework */,
+				8D6E54C3192929A0001A7329 /* AVFoundation.framework */,
 				8DDE9F7B1926888C00609290 /* Foundation.framework */,
 				8DDE9F7D1926888C00609290 /* CoreGraphics.framework */,
 				8DDE9F7F1926888C00609290 /* UIKit.framework */,
@@ -122,6 +141,8 @@
 				8DDE9F941926888C00609290 /* ViewController.m */,
 				8DDE9F961926888C00609290 /* Images.xcassets */,
 				8DDE9F821926888C00609290 /* Supporting Files */,
+				8DDE9FB71926AC1500609290 /* DetailViewController.h */,
+				8DDE9FB81926AC1500609290 /* DetailViewController.m */,
 			);
 			path = MyRadio;
 			sourceTree = "<group>";
@@ -256,6 +277,7 @@
 				8DDE9F951926888C00609290 /* ViewController.m in Sources */,
 				8DDE9F8C1926888C00609290 /* AppDelegate.m in Sources */,
 				8DDE9F881926888C00609290 /* main.m in Sources */,
+				8DDE9FB91926AC1500609290 /* DetailViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -393,6 +415,13 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MyRadio/MyRadio-Prefix.pch";
 				INFOPLIST_FILE = "MyRadio/MyRadio-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/cuongpham/Downloads/iPhoneRTMPLibrary/StaticRtmpLib,
+					"/Users/cuongpham/Downloads/MediaLibDemos-master/lib/CommLibiOS",
+					"/Users/cuongpham/Downloads/MediaLibDemos-master/lib/libav-v9.1965/lib",
+					"/Users/cuongpham/Downloads/MediaLibDemos-master/lib/MediaLibiOS",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -406,6 +435,13 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MyRadio/MyRadio-Prefix.pch";
 				INFOPLIST_FILE = "MyRadio/MyRadio-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/cuongpham/Downloads/iPhoneRTMPLibrary/StaticRtmpLib,
+					"/Users/cuongpham/Downloads/MediaLibDemos-master/lib/CommLibiOS",
+					"/Users/cuongpham/Downloads/MediaLibDemos-master/lib/libav-v9.1965/lib",
+					"/Users/cuongpham/Downloads/MediaLibDemos-master/lib/MediaLibiOS",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -470,6 +506,7 @@
 				8DDE9FAF1926888D00609290 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8DDE9FB01926888D00609290 /* Build configuration list for PBXNativeTarget "MyRadioTests" */ = {
 			isa = XCConfigurationList;
@@ -478,6 +515,7 @@
 				8DDE9FB21926888D00609290 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
